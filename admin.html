@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - AirVote</title>
+    <link rel="stylesheet" href="airvote.css">
+</head>
+<body>
+    <header>
+        <h1>AirVote</h1>
+        <p class="tagline">ADMIN SPACE</p>
+        <img src="https://github.com/lauraburland2002/IoT-assignment/blob/main/AirVote.png?raw=true" alt="Company Logo" id="logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="index.html">Voting</a></li>
+            <li><a href="temp-tips.html">Temp Tips</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Voting Window Form -->
+    <section class="admin-section">
+        <h2>1. Change Voting Windows</h2>
+        
+        <div class="voting-window-form">
+            <label>First Window:</label>
+            <input type="time" id="start1">
+            <input type="time" id="end1"><br><br>
+        
+            <label>Second Window:</label>
+            <input type="time" id="start2">
+            <input type="time" id="end2"><br><br>
+        
+            <button onclick="submitVotingWindows()">Change Voting Windows</button>
+        </div>
+    </section>
+
+    <section class="admin-section">
+        <h2>2. View Recent Votes</h2>
+        
+        <table id="votesTable">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Time of Vote</th>
+                    <th>Temperature Voted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows inserted dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>

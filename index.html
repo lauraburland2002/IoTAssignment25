@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirVote</title>
+    <link rel="stylesheet" href="airvote.css">
+</head>
+<body>
+    <header>
+        <h1>AirVote</h1>
+        <p class="tagline">Democratising your office temperature</p>
+        <a href="/admin.html" class="admin-link" title="Admin Page">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" alt="Admin Settings" class="settings-icon">
+        </a>
+        <img src="https://github.com/lauraburland2002/IoT-assignment/blob/main/AirVote.png?raw=true" alt="Company Logo" id="logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="index.html">Voting</a></li>
+            <li><a href="temp-tips.html">Temp Tips</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="weather-info">
+            <p><strong>Outside Temperature:</strong> <span id="outsideTemp">Loading...</span></p>
+            <p><strong>Weather:</strong> <span id="weatherCondition">Loading...</span> <span id="weatherIcon"></span></p>
+        </div>
+
+        <div class="voting-section">
+            <div class="circle">
+                <p class="vote-label">Vote for Your Preferred Temp</p>
+                <input type="range" id="temperatureSlider" min="16" max="25" value="22">
+                <span id="temperatureValue">22°C</span>
+            </div>
+            <button id="submitVote">Submit Vote</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
