@@ -4,7 +4,7 @@ This is the backend server for the **AirVote** project, which allows employees t
 
 ## Features
 - Submit temperature votes
-- Retrieve the average of recent votes (past hour)
+- Retrieve the average of recent votes (in the past voting window)
 - View all submitted votes
 - Lightweight and self-contained, no third-party services
 
